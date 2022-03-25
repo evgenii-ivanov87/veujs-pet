@@ -1,17 +1,19 @@
 <template>
       <h1>{{title}}</h1>
-      <ButtonItem @click="increment" >Click me</ButtonItem>
+      
+      <StarRating :rating="3"/>
   
   
 </template>
 
 <script>
-import ButtonItem from './components/Button.vue';
+
+import StarRating from './components/StarRating.vue'
 
 export default {
   name: 'App',
   components: {
-    ButtonItem
+        StarRating
   },
   data(){
     return{
